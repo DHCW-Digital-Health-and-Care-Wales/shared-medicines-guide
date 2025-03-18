@@ -1,6 +1,6 @@
 ## sub-process: find GP supplier
 
-When the GP prctice code is known we can locate the suppliers  API endpoint
+When the GP practice code is known we can locate the suppliers  API endpoint
 
 ```mermaid
      flowchart LR
