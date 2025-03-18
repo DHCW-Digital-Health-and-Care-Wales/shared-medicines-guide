@@ -2,6 +2,9 @@
 
 When the GP practice code is known we can locate the suppliers  API endpoint
 
+> see also: [FHIR mapping](map-to-fhir/index.md)
+
+
 ```mermaid
      flowchart LR
  
