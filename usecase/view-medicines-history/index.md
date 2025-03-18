@@ -12,7 +12,7 @@ Wireframes are not prescriptive. See notes on [how to use wireframes](https://gi
 
 - [Multiple entries in the record]()
 
-- [Exessive entries in the record]()
+- [Excessive entries in the record]()
 
 - [Incomplete detail in the record]()
 
@@ -22,9 +22,11 @@ Wireframes are not prescriptive. See notes on [how to use wireframes](https://gi
 
 ### User goals
 
-- see patient medicines history with context
-- search patient medicines history
-- filter patient medicines history 
+- see up to two years of patient medicines history
+- see when elements need attention
+- search / filter to find specific things
+
+
 
 ### Interface goals
 
@@ -36,7 +38,8 @@ Wireframes are not prescriptive. See notes on [how to use wireframes](https://gi
 
 - use data intelligently
 
-  
+
+
 
 ### List view: no entries
 
@@ -59,28 +62,29 @@ Wireframes are not prescriptive. See notes on [how to use wireframes](https://gi
 
 
 
-### List view: record with exessive entries
+### List view: record with excessive entries
 
 #### The user can:
 
 1. see [record with entries]() **PLUS**
 
-2. see that some older entries are not shown
+2. see that there are more entries not shown
 
-3. see the date range that the hidden entries cover
-
-4. see when the record was last checked
+   1. see the amount and time frame of entries not shown
 
    
+
 
 ### List view: record with activity highlights
 
    #### The user can:
 
    1. see [record with entries]() **PLUS**
-      2. see an activity summary on any changed entry
-            1. summary of medicine additions in the entry
-            2. summary of medicine modifications in the entry
+      2. see an activity summary
+            1. see if an activity added a medicine
+            2. see if an activity changed a medicine
+
+
 
 ### item summary view
 
@@ -92,6 +96,8 @@ Wireframes are not prescriptive. See notes on [how to use wireframes](https://gi
    4. see when it was last issued (if issued)
       1. how many times its been issued compared to the total allowed (if a repeat medication)
    5. see there may be problems with the medicine
+
+
 
 ### item detail view
 
