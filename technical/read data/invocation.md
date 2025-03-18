@@ -64,7 +64,7 @@ style SUCCESS fill: green
 
 ### sub-process: Invoke GP API
 
->  See also: [read data from SMR GP API](../read-gp-data/index.md)
+>  See also: [read data from SMR GP API](read-gp-data/index.md)
 
 The GP API invocation needs an *identity token* to call a cloud run instance from the service account making the call. The token is generated from the internal metadata server in GCP. Note that code execution outside of GCP wont have access to the metadata server so developers and pipelines will use other means.
 
