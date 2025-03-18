@@ -1,6 +1,6 @@
 ## Invoke SMR GP API (read) 
 
-> See also: [find patient by identifiers]() | [find gp supplier]() | [get GP records as FHIR]()
+> See also: [find patient by identifiers](find-patient.md) | [find gp supplier](find-gp-supplier.md) | [get GP records as FHIR](get-gp-records-as-fhir.md)
 
 This process is invoked from the main SMR API entry point and is not directly exposed to api consumers. The consumer parameters are inspected and further actions follow to get the GP data in FHIR format.
 
