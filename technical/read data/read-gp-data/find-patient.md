@@ -3,6 +3,8 @@
 
 The patient's NHS number and GP Practice code are needed to invoke the GP supplier's API. 
 
+> see also: [FHIR mapping](map-to-fhir/index.md)
+
 ```mermaid
 flowchart LR
  
