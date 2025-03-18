@@ -1,4 +1,4 @@
-## read data from SMR API
+# read data from SMR API
 
 > see also:  [security](security.md) | [audit](audit.md) | [Invoke SMR API (read)](invocation.md)
 
