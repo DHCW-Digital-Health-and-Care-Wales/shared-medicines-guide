@@ -31,7 +31,7 @@ This details the field mapping between the IHR response and an NHS Wales profile
 | telecom[x].use              | ``Demographics.Telephone.UnstructuredTelecom.TelecomMode``   | see [note 2](#note-2-telecom-use)                           |
 | telecom[x].system           | "http://hl7.org/fhir/contact-point-system"                   |                                                              |
 | telecom[x].value            | ``Demographics.Telephone.UnstructuredTelecom.TelecomMode``   |                                                              |
-| generaPractitioner          |                                                              | Referenced resource. See [organization](organization.md) for more information. |
+| generaPractitioner          |                                                              | Referenced resource. See [organization](Organization.md) for more information. |
 
 
 
