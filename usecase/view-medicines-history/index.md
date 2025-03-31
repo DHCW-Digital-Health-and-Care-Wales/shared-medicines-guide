@@ -49,7 +49,7 @@ Wireframes are not prescriptive. See notes on [how to use wireframes](https://gi
 2. understand what sources are included in the record
 3. see when it was last checked
 
-
+![empty medicines record](assets/empty.png)
 
 ### List view: record with entries
 
@@ -62,7 +62,7 @@ Wireframes are not prescriptive. See notes on [how to use wireframes](https://gi
 5. for an item in an entry they can see the [item summary view](#item-summary-view)
 6. see when the record was last checked
 
-
+![populated medicines record](assets/list.png)
 
 ### List view: record with excessive entries
 
