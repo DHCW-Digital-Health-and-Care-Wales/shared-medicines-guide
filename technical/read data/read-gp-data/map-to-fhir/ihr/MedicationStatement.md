@@ -27,8 +27,8 @@ Quoted values ("") are static values and not read from IHR.
 | DateAsserted | ``RecordElementProvanance.RecordedInSourceAt`` |  |
 | Dosage.Text | ``Dosage.DoseDescription`` |  |
 | Dosage.AdditionalInstructions.Text | ``AdditionalInstructions`` |  |
-| Subject |  | Referenced resource. See [patient](patient.md) for more information. |
-| InformationSource |  | Referenced resource. See [organization](organization.md) for more information. |
+| Subject |  | Referenced resource. See [patient](Patient.md) for more information. |
+| InformationSource |  | Referenced resource. See [organization](Organization.md) for more information. |
 
 
 
