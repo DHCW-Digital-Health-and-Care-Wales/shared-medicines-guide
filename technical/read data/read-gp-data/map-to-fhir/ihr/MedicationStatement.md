@@ -12,14 +12,14 @@ Quoted values ("") are static values and not read from IHR.
 | identifier.system                | "https://fhir.nhs.wales/Id/wgpr-source-identifier"           |                    |
 | identifier.value                 | ``RecordElementProvenance.RecordElementID.IdValue``          |                    |
 | extention:lastIssueDate.url | "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationStatementLastIssueDate" |  |
-| extention:lastIssueDate.value | "active"                                                     | see [note 1](#Note 1: last issue date) |
+| extention:lastIssueDate.value | "active"                                                     | see [note 1](#note-1-last-issue-date) |
 | extention:CourseOfTherapyType.url | "https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-MedicationCourseOfTherapyType" |  |
 | extention:CourseOfTherapyType.coding.system | "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy" |  |
-| extention:CourseOfTherapyType.coding.Code |  | see [note 2](#Note 2: course of therapy type coding) |
+| extention:CourseOfTherapyType.coding.Code |  | see [note 2](#note-2-course-of-therapy-type-coding) |
 | extention:CourseOfTherapyType.coding.Display |  |  |
-| status |  | see [note 3](#Note 3: status) |
+| status |  | see [note 3](#note-3-status) |
 | category | "Community" |  |
-| medicationCodeableConcept.Coding[0].System | ``Drug.DrugDictionary`` <br />``Drug.DrugDictionary.ClincalCodeSchemaId``<br />``Drug.DrugDictionary.ClincalCodeSchemaVersion`` | see [note 4](#Note 4: coding system) |
+| medicationCodeableConcept.Coding[0].System | ``Drug.DrugDictionary`` <br />``Drug.DrugDictionary.ClincalCodeSchemaId``<br />``Drug.DrugDictionary.ClincalCodeSchemaVersion`` | see [note 4](#note-4-coding-system) |
 | medicationCodeableConcept.Coding[0].Code | ``Drug.DrugCodeValue`` |  |
 | medicationCodeableConcept.Coding[0].Display | ``Drug.DrugIdentifier`` |  |
 | medicationCodeableConcept.Text | ``Drug.DrugIdentifier`` |  |
@@ -59,7 +59,7 @@ Status follows a complicated pattern to address variation between suppliers
 
 * when ``additionalInstructions`` contains "not issued" or ``Status`` contains "not issued" 
   * Unknown
-* when ``Status`` contains "current" or there is not ``status`` and  XML node name is  ``PrecribedAcute`` or ``PrecribedRepeat``
+* when ``Status`` contains "current" or there is no ``status`` and  XML node name is  ``PrecribedAcute`` or ``PrecribedRepeat``
   * Active
 * when ``Status`` contains "mistake"
   * EnteredInError
