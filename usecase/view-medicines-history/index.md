@@ -72,7 +72,7 @@ Wireframes are not prescriptive. See notes on [how to use wireframes](https://gi
 2. see that there are more entries not shown
   1. see the amount and time frame of entries not shown
 
-   
+  ![populated medicines record with partial display](assets/list-excessive.png) 
 
 
 ### List view: record with activity highlights
