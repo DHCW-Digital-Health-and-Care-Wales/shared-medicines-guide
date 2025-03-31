@@ -21,14 +21,14 @@ This details the field mapping between the IHR response and an NHS Wales profile
 | name[0].use                 | "official"                                                   |                                                              |
 | name[0].family              | ``Demographics.FormalName.StructuredName.FamilyName``        |                                                              |
 | name[0].given[*]            | ``Demographics.FormalName.StructuredName.GivenName``         |                                                              |
-| gender                      | ``Demographics.Gender``                                      | see [note 1](#Note 1: gender)                                |
+| gender                      | ``Demographics.Gender``                                      | see [note 1](#note-1-gender)                                |
 | birthDate                   | ``Demographics.DateOfBirth``                                 |                                                              |
 | address.use                 | "home"                                                       |                                                              |
 | address.type                | "both"                                                       |                                                              |
 | address.line[0]             | ``Demographics.Address.StructuredAddress.PropertyNumber``    |                                                              |
 | address.line\[x\]           | ``Demographics.Address.StructuredAddress.StructuredAddress.AddressLine[x]`` |                                                              |
 | address.postalCode          | ``Demographics.Address.PostCode``                            |                                                              |
-| telecom[x].use              | ``Demographics.Telephone.UnstructuredTelecom.TelecomMode``   | see [note 2](#Note 2: telecom use)                           |
+| telecom[x].use              | ``Demographics.Telephone.UnstructuredTelecom.TelecomMode``   | see [note 2](#note-2-telecom-use)                           |
 | telecom[x].system           | "http://hl7.org/fhir/contact-point-system"                   |                                                              |
 | telecom[x].value            | ``Demographics.Telephone.UnstructuredTelecom.TelecomMode``   |                                                              |
 | generaPractitioner          |                                                              | Referenced resource. See [organization](organization.md) for more information. |
@@ -47,7 +47,7 @@ Gender determined using the following logic when reading   ``Demographics.Gender
 
 
 
-**Note 2: telecom use**
+##### Note 2: telecom use
 
 Telecom use checks if ``Demographics.Telephone.UnstructuredTelecom.TelecomMode`` contains a value:
 
