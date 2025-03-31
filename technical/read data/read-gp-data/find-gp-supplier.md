@@ -9,29 +9,32 @@ When the GP practice code is known we can locate the suppliers  API endpoint
      flowchart LR
  
 
-    TRIGGER(["API request succeeds"]) 
-    S1["check authentication token for <br><b>user name</b>"]
-    S2["check header for <br><b>user identifier</b>"]
-    S3{"user known?"}
-    S4["check response for <br><b>patient name</b>"]
-    S5["check response for <br><b>patient identifier</b>"]
-    S6{"patient known?"}
+    TRIGGER(["Find GP Supplier"]) 
+    S1["Call WRDS GPPratice ResultSet request with GP code"]
+    S2{"OK?"}
+    S3{"permission <br>denied?"}
+    S4["choose endpoint from config using GPpracticeSystemSupplierCode"]
+    S4A{"endpoint found?"}
+    S5["bundle with operationOutcome"]
+    S6["bundle with endpoint"]
 
-    ABORT(["not enough data"])
-    SUCCESS(["logged for NIAAS"])
+    SUCCESS(["results returned"])
    
 TRIGGER --> S1
 S1 ---> S2
-S2 ---> S3
-S3 -- No ---> ABORT
-S3 -- Yes ---> S4
-S4 --> S5
-S5 --> S6
-S6 -- No ---> ABORT
-S6 -- Yes ---> SUCCESS
+S2 -- No ---> S5
+S2 -- Yes ---> S3
+S3 -- No ---> S4
+S3 -- Yes ---> S5
+S4 --> S4A
+S4A -- No ---> S5
+S4A -- Yes ---> S6
+S5 --> SUCCESS
+S6 --> SUCCESS
+
        
 
-style TRIGGER fill:#0085FC
-style ABORT fill:#ff9900, color:#000
-style SUCCESS fill: green
+style TRIGGER fill:#0085FC, color:#fff
+
+style SUCCESS fill: green, color:#fff
 ```
