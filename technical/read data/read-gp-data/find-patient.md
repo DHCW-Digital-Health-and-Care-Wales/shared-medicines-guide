@@ -51,9 +51,9 @@ E4A --> SUCCESS
 E4B --> SUCCESS
 
 
-style TRIGGER fill:#0085FC
+style TRIGGER fill:#0085FC, color:#FFF
 style LOGERROR fill:red, color:#000
 style LOGWARNING fill:#ff9900, color:#000
-style SUCCESS fill: green
+style SUCCESS fill: green, color:#FFF
 
 ```
