@@ -13,17 +13,17 @@ flowchart LR
     S2["min date is <br>two years ago"]
     S3{"request type?"}
 
-    M1["add repeat,acute and discontinued parameters"]
-    M2{"has date<br>parameters?"}
-    M3["set min date to to param date"]
+    M1["add repeat,acute and discontinued parameters with min date"]
+    M2{"consumer provided <br>date parameters?"}
+    M3["update repeat,acute and discontinued parameters with consumer dates"]
 
     A1["add allergyIntolerance parameter"]
     A2["set min date to twenty years ago"]
         
     S4["Send request <br>to <br>IHR3 GetRecord <br>Endpoint"]
     S5{"OK?"}
-    S6["Map response <br>to <br>FHIR"]
-    END(["stop"])
+    S6[["Map response <br>to <br>FHIR"]]
+
     ABORT(["invalid request"])
     SUCCESS(["result returned"])
    
@@ -46,10 +46,10 @@ S6 --> SUCCESS
 
 
 
-style TRIGGER fill:#0085FC
-style END fill:#ff9900, color:#000
+style TRIGGER fill:#0085FC, color: #fff
+
 style ABORT fill:#ff9900, color:#000
-style SUCCESS fill: green
+style SUCCESS fill: green, color: #fff
 ```
 
 
