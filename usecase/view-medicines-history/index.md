@@ -8,15 +8,15 @@ Wireframes are not prescriptive. See notes on [how to use wireframes](https://gi
 
 **Walk-through samples**
 
-- [No entries in the record]()
+- [No entries in the record](#list-view-no-entries)
 
-- [Multiple entries in the record]()
+- [Multiple entries in the record](#list-view-record-with-entries)
 
-- [Excessive entries in the record]()
+- [Excessive entries in the record](#list-view-record-with-excessive-entries)
 
-- [Incomplete detail in the record]()
+- Incomplete detail in the record
 
-- [Activities highlight in the record]()
+- [Activities highlight in the record](#list-view-record-with-activity-highlights)
 
   
 
@@ -57,7 +57,7 @@ Wireframes are not prescriptive. See notes on [how to use wireframes](https://gi
 1. see multiple entries
 2. see entries are ordered latest first by list date
 3. see that each entry contains one or items
-4. for an item in an entry they can see the [item summary view]()
+4. for an item in an entry they can see the [item summary view](#item-summary-view)
 5. see when the record was last checked
 
 
@@ -66,31 +66,29 @@ Wireframes are not prescriptive. See notes on [how to use wireframes](https://gi
 
 #### The user can:
 
-1. see [record with entries]() **PLUS**
-
+1. see [record with entries](#list-view-record-with-entries) **PLUS**
 2. see that there are more entries not shown
-
-   1. see the amount and time frame of entries not shown
+  1. see the amount and time frame of entries not shown
 
    
 
 
 ### List view: record with activity highlights
 
-   #### The user can:
+#### The user can:
 
-   1. see [record with entries]() **PLUS**
-      2. see an activity summary
-            1. see if an activity added a medicine
-            2. see if an activity changed a medicine
+  1. see [record with entries](#list-view-record-with-entries) **PLUS**
+  2. see an activity summary
+     1. see if an activity added a medicine
+     2. see if an activity changed a medicine
 
 
 
 ### item summary view
 
-   #### The user can:
+#### The user can:
 
-      1. see a medicine name
+   1. see a medicine name
    2. see a status
    3. see a dose instruction
    4. see when it was last issued (if issued)
@@ -101,17 +99,17 @@ Wireframes are not prescriptive. See notes on [how to use wireframes](https://gi
 
 ### item detail view
 
-   #### The user can:
+#### The user can:
 
-      1. see [item summary view]() **PLUS**
-      2. see the prescriber
-      3. see the recorded date
-      4. effective date (either from, to or both)
-      5. see the reason for the medication (indication)
-      6. see the reason for a change
-      7. see notes
-      8. see any data is missing or unknown
-      9. see why there are problems with the medicine
+   1. see [item summary view](#item-summary-view) **PLUS**
+   2. see the prescriber
+   3. see the recorded date
+   4. effective date (either from, to or both)
+   5. see the reason for the medication (indication)
+   6. see the reason for a change
+   7. see notes
+   8. see any data is missing or unknown
+   9. see why there are problems with the medicine
 
 
 
