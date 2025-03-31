@@ -10,7 +10,7 @@ This details the field mapping between the IHR response and an NHS Wales profile
 | ----------------- | ------------------------------------------------------------ | --------------------------------------------------- |
 | meta.profile      | "https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Practitioner" |                                                     |
 | identifier.use    | "official"                                                   |                                                     |
-| identifier.system |                                                              | see [note 1](#Note 1: identifer systems and values) |
+| identifier.system |                                                              | see [note 1](#note-1-identifer-systems-and-values) |
 | identifier.value  | ``RegisteredGPcode.IdValue``                                 |                                                     |
 | name[0].use       | "official"                                                   |                                                     |
 | name[0].family    | ``RegisteredGP.StructuredName.FamilyName``                   |                                                     |
