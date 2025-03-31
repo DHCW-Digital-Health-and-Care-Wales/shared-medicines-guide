@@ -13,14 +13,14 @@ Quoted values ("") are static values and not read from IHR.
 | identifier.value                 | ``RecordElementProvenance.RecordElementID.IdValue``          |                    |
 | clinicalStatus.coding.system     | "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical" |                    |
 | clinicalStatus.coding.value      | "active"                                                     | always active      |
-| code.coding.system |  | see [note 1](#note-1%3A-coding-system) and [note 2](#note-2%3A-verify-allergy-coding-feature) |
-| code.coding.value | ``AllergyAdverseReaction.ClinicalWarning.ClinicalInformation.ClinicalCode.ClinicalCodeValue`` |  |
-| code.coding.display | ``AllergyAdverseReaction.ClinicalWarning.ClinicalInformation.ClinicalCode.ClinicalCodeSelectedTerm`` |  |
-| code.text | ``AllergyAdverseReaction.ClinicalWarning.ClinicalInformation.ClinicalCode.ClinicalCodeSelectedTerm`` |  |
-| dateRecorded | ``AllergyAdverseReaction.DateRecorded`` |  |
-| onsetDateTime | ``AllergyAdverseReaction.StartDate`` |  |
-| patient |  | Referenced resource. See [patient]() for more information. |
-| recorder |  | see [note 3](#note-3%3A-recorder) |
+| code.coding.system |  | see [note 1](#note-1-coding-system) and [note 2](#note-2-verify-allergy-coding-feature) |
+| code.coding.value | ``ClinicalWarning.ClinicalInformation.ClinicalCode.ClinicalCodeValue`` |  |
+| code.coding.display | ``ClinicalWarning.ClinicalInformation.ClinicalCode.ClinicalCodeSelectedTerm`` |  |
+| code.text | ``ClinicalWarning.ClinicalInformation.ClinicalCode.ClinicalCodeSelectedTerm`` |  |
+| dateRecorded | ``DateRecorded`` |  |
+| onsetDateTime | ``StartDate`` |  |
+| patient |  | Referenced resource. See [patient](Patient.md) for more information. |
+| recorder |  | see [note 3](#note-3-recorder) |
 
 
 
