@@ -9,8 +9,8 @@ Quoted values ("") are static values and not read from IHR.
 | FHIR                       | IHR                                                          | notes                                                        |
 | -------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | meta.profile               | "https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-PractitionerRole" |                                                              |
-| practitioner               | "official"                                                   | Referenced resource. See [practitioner](practitioner.md) for more information. |
-| orgnaization               |                                                              | Referenced resource. See [organization](organization.md) for more information. |
+| practitioner               | "official"                                                   | Referenced resource. See [practitioner](Practitioner.md) for more information. |
+| orgnaization               |                                                              | Referenced resource. See [organization](Organization.md) for more information. |
 | code[0].coding.system      | "http://snomed.info/sct"                                     |                                                              |
 | code[0].coding.code        | "62247001"                                                   |                                                              |
 | code[0].coding.display     | ""General practitioner"                                      |                                                              |
