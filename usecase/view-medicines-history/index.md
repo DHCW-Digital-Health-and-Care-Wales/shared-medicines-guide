@@ -46,7 +46,8 @@ Wireframes are not prescriptive. See notes on [how to use wireframes](https://gi
 #### The user can:
 
 1. clearly see there is no record of medicines
-2. see when it was last checked
+2. understand what sources are included in the record
+3. see when it was last checked
 
 
 
@@ -54,11 +55,12 @@ Wireframes are not prescriptive. See notes on [how to use wireframes](https://gi
 
 #### The user can:
 
-1. see multiple entries
-2. see entries are ordered latest first by list date
-3. see that each entry contains one or items
-4. for an item in an entry they can see the [item summary view](#item-summary-view)
-5. see when the record was last checked
+1. see one or more entries
+2. understand what sources are included in the record
+3. see entries are ordered latest first by list date
+4. see that each entry contains one or items
+5. for an item in an entry they can see the [item summary view](#item-summary-view)
+6. see when the record was last checked
 
 
 
