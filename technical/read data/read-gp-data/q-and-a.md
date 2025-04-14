@@ -46,18 +46,18 @@ With the list, we can see some information of :
    display: "Dr Alison Bradley (GMP: 123456) at Cwm Cymru Practice (ODS: W12345)"
   },
   entry: [
-    // the medication with its status and dose instruction
+// the medication with its status and dose instruction
     {
       item: {
         display: "Co-amoxiclav 250mg/125mg dispersible tablets sugar free - active - 1 tablet 3 times a day"
       }
     }
-    // and any other entries from the gp record
+// and any other entries from the gp record
   ]
 }
 ```
 ### If you ask to see all available details, the medication, the request, the patient and information about the recorder can also be returned. 
-The list is as above, but the item now points to the detail in a medicationStatement. Other properties expand in the same way, for the patient and Practice.
+The list is shown as as the previous example. However, the item now points to the detail in a medicationStatement. Other properties expand in the same way, for the patient and practice.
 If we focus on the medicationStatement, we can see some further information about the following:
 * coding of the medicine
 * acute or repeat 
@@ -65,9 +65,16 @@ If we focus on the medicationStatement, we can see some further information abou
 * category
 * effective date
 * asserted date
-* quantity supplied
+
 * information source (the GP practice)
+
+In addition, the 'contained' property holds a medicationRequest, which is how prescriptions/orders are represented in FHIR. Several properties of the request echo those in the statement (medication, source, patient). Requests like these are always presented with a status echoing that of the statement and the intent is always order. Requests have a courseOfTherapyType property, which indicates acute or repeat(continuous). We have an extention in the statement that echos this. On the request, we can see:
+* quantity supplied
+* acute or repeat
+
+Unfortunately, we are unable to show any dispense activity from this source.
 ```javascript
+// firstly the list again:
 {
 // the title format is source, content and most recent activity date
   title: "GP Record Medications 2025-04-15",
@@ -82,26 +89,28 @@ If we focus on the medicationStatement, we can see some further information abou
    display: "Dr Alison Bradley (GMP: 123456) at Cwm Cymru Practice (ODS: W12345)"
   },
   entry: [
-    // the medication with its status and dose instruction plus more details in the reference (see below)
+// the medication with its status and dose instruction plus more details in the reference (see below)
     {
       item: {
+// the reference points to the following resource using its id property
         reference: "#acute-statement-example",
         display: "Co-amoxiclav 250mg/125mg dispersible tablets sugar free - active - 1 tablet 3 times a day"
       }
     }
-    // and any other entries from the gp record
+// and any other entries from the gp record
   ]
 },
-// the medication statement
+// followed by the medication statement
 {
     id: "acute-statement-example",
-    // this describes the order (prescription) that the statement was derived from
+// this describes the order (prescription) that the statement was derived from
     contained: [
         {
             resourceType: "MedicationRequest",
             id: "1",
             status: "completed",
             intent: "order",
+// echos the medication statement
             medicationCodeableConcept: {
                 coding: [
                     {
@@ -112,10 +121,12 @@ If we focus on the medicationStatement, we can see some further information abou
                 ],
                 text: "Co-amoxiclav 250mg/125mg dispersible tablets sugar free"
             },
+// echos the medication statement
             subject: {
               reference: "#patient-example",
               display: "Mr Alan Brown (NHS: 1234567890)"
             },
+// echos the medication statement
             requester: {
                 type: "Organization",
                 identifier: {
@@ -125,6 +136,7 @@ If we focus on the medicationStatement, we can see some further information abou
                 },
                 display: "Synthetic General Practice B (ODS: W00010)"
             },
+// acute or repeat(continuous)
             courseOfTherapyType: {
                 coding: [
                     {
@@ -134,6 +146,7 @@ If we focus on the medicationStatement, we can see some further information abou
                     }
                 ]
             },
+// quantity ordered
             dispenseRequest: {
                 quantity: {
                     value: 21,
@@ -143,6 +156,7 @@ If we focus on the medicationStatement, we can see some further information abou
             }
         }
     ],
+// echos the medication request courseOfTherapyType property
     extension: [
         {
             url: "https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-MedicationCourseOfTherapyType",
@@ -157,6 +171,7 @@ If we focus on the medicationStatement, we can see some further information abou
             }
         }
     ],
+// id from the source record
     identifier: [
         {
             system: "https://fhir.nhs.wales/Id/wgpr-source-identifier",
@@ -198,11 +213,13 @@ If we focus on the medicationStatement, we can see some further information abou
         },
         display: "Cwm Cymru Practice (ODS: W12345)"
     },
+// the link to the contained request
     derivedFrom: [
         {
             reference: "#1"
         }
     ],
+// dosage detail- including additional instruction where provided
     dosage: [
         {
             text: "1 tablet 3 times a day"
