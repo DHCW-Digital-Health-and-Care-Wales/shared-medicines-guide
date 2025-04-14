@@ -300,3 +300,26 @@ The overall strcture is identical but the course of therapy type changes and som
     ],
 }
 ```
+
+## Q: What would need to happen for an item on the GP record to have a completed status?
+
+### A: There a a few situations that can result in the GP system automatically changing the status of a prescription (after a set period of time) which results in a completed status in the record:
+
+* An acute has run its course 
+* An acute has been cancelled
+* an entire repeat course (this means all issues) has been cancelled
+
+Note that a peiod of time will need to pass before this change to completed is enacted. In the itnerim period the status may be shown as 'unknown'.
+
+## Q: What would need to happen for an item on the GP record to have an unknown status?
+
+### A: The status is unknown when the GP system has produced a 'not issued' status. 
+This is normally temporary following a cancel (see previous) or if the prescription has been post dated. Because these are two very different activities in terms of intent, the status is set to unknown.
+
+## Q: If a GP prescribes a medicine for an acute treatment, and then moves this to a repeat, how is this represented in the record?
+
+### A: There are two outcomes, depending on the activity by the GP.
+
+* if they modify the acute medication and simply switch the type to repeat then there will be one item returned (repeat, and potentially active)
+* if they consider the acute as complete and decide to add an new prescription to cover the repeat then there will be two items returned- one acute (complete) and on repeat (potentially active)
+
