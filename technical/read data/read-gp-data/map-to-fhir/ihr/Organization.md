@@ -10,13 +10,13 @@ This details the field mapping between the IHR response and an NHS Wales profile
 
 | FHIR               | IHR                                                          | notes |
 | ------------------ | ------------------------------------------------------------ | ----- |
-| meta.profile       | "https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Organization" |       |
-| identifier.use     | "official"                                                   |       |
-| identifier.system  | "https://fhir.nhs.uk/Id/ods-organization-code"               |       |
+| meta.profile       | ``"https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Organization"`` |       |
+| identifier.use     | ``"official"``                                                  |       |
+| identifier.system  | ``"https://fhir.nhs.uk/Id/ods-organization-code" ``              |       |
 | identifier.value   | ``GPdetails.Practice.OrganisationId.IdValue``                |       |
 | name               | ``GPdetails.Practice.OrganisationName``                      |       |
-| address.use        | "work"                                                       |       |
-| address.type       | "both"                                                       |       |
+| address.use        | ``"work"``                                                       |       |
+| address.type       | ``"both"``                                                       |       |
 | address.line[0]    | ``GPdetails.Practice.OrganisationAddress.StructuredAddress.PropertyNumber`` |       |
 | address.line\[x\]  | ``GPdetails.Practice.OrganisationAddress.StructuredAddress.AddressLine[x]`` |       |
 | address.postalCode | ``GPdetails.Practice.OrganisationAddress.PostCode``          |       |
@@ -78,20 +78,4 @@ This details the field mapping between the IHR response and an NHS Wales profile
 ```
 
 
-
-
-
-| Property path                                               | Transformation                                               | System    | Source                                                       |
-| ----------------------------------------------------------- | ------------------------------------------------------------ | --------- | ------------------------------------------------------------ |
-| meta.profile                                                | "https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Organization" | EMIS,INPS |                                                              |
-|identifier.use|"official"|EMIS,INPS||
-|identifier.system|"https://fhir.nhs.uk/Id/ods-organization-code"|EMIS,INPS||
-|identifier.value||EMIS,INPS|ihr:Practice/ihr:OrganisationId/ihr:IdValue|
-|active|"true"|EMIS,INPS||
-|name||EMIS,INPS|ihr:Practice/ihr:OrganisationName|
-|address.use|"work"|EMIS,INPS||
-|address.type|"both"|EMIS,INPS||
-|address.line[0]||EMIS,INPS|ihr:Practice/ihr:OrganisationAddress/ihr:StructuredAddress/ihr:PropertyNumber|
-|address.line\[x\]||EMIS,INPS|ihr:Practice/ihr:OrganisationAddress/ihr:StructuredAddress/ihr:AddressLine[x]|
-|address.postalCode||EMIS,INPS|ihr:Practice/ihr:OrganisationAddress/ihr:PostCode|
 
