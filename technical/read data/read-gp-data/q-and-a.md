@@ -72,7 +72,7 @@ In addition, the 'contained' property holds a medicationRequest, which is how pr
 * quantity supplied
 * acute or repeat
 
-Unfortunately, we are unable to show any dispense activity from this source.
+Unfortunately, we are unable to show detailed dispense activity from this source.
 ```javascript
 // firstly the list again:
 {
@@ -226,4 +226,74 @@ Unfortunately, we are unable to show any dispense activity from this source.
         }
     ]
 },
+```
+## Q: If a GP prescribes a medicine for an repeat treatment, how is this represented in the record?
+### A: Unless you ask to see all available details, the item will be summarised as an entry in a list in exactly the same way as an acute.
+There is no differciation between acute or repeat medications in the list format.
+### A: If you ask to see all available details, the response is similar to an acute. 
+The overall strcture is identical but the course of therapy type changes and some further information about the repeat is shown in the contained request:
+* repeats issued
+* repeats authorised
+* last issue date
+```javascript
+// the same medication statement as a repeat with just the changes shown:
+{
+// this describes the order (prescription) that the statement was derived from
+    contained: [
+        {
+// other properties omitted...            
+// acute or repeat(continuous)
+            courseOfTherapyType: {
+                coding: [
+                    {
+                        system: "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                        code: "continuous",
+                        display: "Continuous long term therapy"
+                    }
+                ]
+            },
+// how many repeats issued (if issued at all)
+            extension: [
+               {
+                   url: "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationRepeatInformation",
+                   extension: [
+                       {
+                           url: "numberOfPrescriptionsIssued",
+                           valueUnsignedInt: 1
+                       }
+                   ]
+               }
+          ],
+            dispenseRequest: {
+// how many repeats authorized
+                numberOfRepeatsAllowed: 3,
+                quantity: {
+                    value: 21,
+                    unit: "tablet",
+                    code: "tablet"
+                }
+            }
+        }
+    ],
+// echos the medication request courseOfTherapyType property
+    extension: [
+        {
+            url: "https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-MedicationCourseOfTherapyType",
+            valueCodeableConcept: {
+                coding: [
+                    {
+                        system: "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                        code: "continuous",
+                        display: "Continuous long term therapy"
+                    }
+                ]
+            }
+        },
+// when the repeat was last issued (if issued)
+        {
+            url: "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationStatementLastIssueDate",
+            valueDateTime: "2025-04-14"
+        }
+    ],
+}
 ```
