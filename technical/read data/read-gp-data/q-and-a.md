@@ -1,6 +1,6 @@
 # Questions & Answers
 
-## If a GP prescribes a medicine for an acute treatment, how is this represented in the record?
+## Q: If a GP prescribes a medicine for an acute treatment, how is this represented in the record?
 Lets assume the following values:  
 * a Virtual Medicinal Product (VMP):
   * 'Co-amoxiclav 250mg/125mg dispersible tablets sugar free' (DMD: 39021311000001109) 
@@ -13,7 +13,7 @@ Lets assume the following values:
 * recorded and issued on Tuesday 15th April 2025
 * we look at the record on the 17th April 2025
 
-### Unless you ask to see all available details, the item will be only be summarised as an entry in a list.
+### A: Unless you ask to see all available details, the item will be only be summarised as an entry in a list.
 With the list, we can see some information of :
 * the source (the GP)
 * the subject(the patient with their trusted NHS number)
@@ -56,7 +56,7 @@ With the list, we can see some information of :
   ]
 }
 ```
-### If you ask to see all available details, the medication, the request, the patient and information about the recorder can also be returned. 
+### A: If you ask to see all available details, the medication, the request, the patient and information about the recorder can also be returned. 
 The list is shown as as the previous example. However, the item now points to the detail in a medicationStatement. Other properties expand in the same way, for the patient and practice.
 If we focus on the medicationStatement, we can see some further information about the following:
 * coding of the medicine
