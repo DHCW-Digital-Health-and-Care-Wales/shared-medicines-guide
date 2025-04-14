@@ -202,8 +202,8 @@ Unfortunately, we are unable to show detailed dispense activity from this source
        reference: "#patient-example",
        display: "Mr Alan Brown (NHS: 1234567890)"
     },
-    effectiveDateTime: "2024-10-24",
-    dateAsserted: "2024-10-24T08:46:30.0000000+01:00",
+    effectiveDateTime: "2025-04-15",
+    dateAsserted: "2025-04-15T10:46:30.0000000+01:00",
     informationSource: {
         type: "Organization",
         identifier: {
@@ -235,6 +235,9 @@ The overall strcture is identical but the course of therapy type changes and som
 * repeats issued
 * repeats authorised
 * last issue date
+
+ The following leaves out any unchanged properties from the acute exmaple so you can focus on the differences.
+ 
 ```javascript
 // the same medication statement as a repeat with just the changes shown:
 {
