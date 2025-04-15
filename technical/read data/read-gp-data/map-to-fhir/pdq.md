@@ -1,6 +1,6 @@
 # PDQ
 
-Internally the service makes a 'search for patient' FHIR search request and expects a FHIR search response. It maps a [FHIR Request](FHIR Request) to a [PDQ XML request](PDQ Request). The [PDQ XML Response](PDQ Response) is mapped to a [FHIR Response](FHIR Response) as described here. The intent of the design is to be swappable with a similar search for patient request to CDR at a point when that is viable.
+Internally the service makes a 'search for patient' FHIR search request and expects a FHIR search response. It maps a [FHIR Request](#fhir-request) to a [PDQ XML request](#pdq-request). The [PDQ XML Response](#pdq-response) is mapped to a [FHIR Response](#fhir-response) as described here. The intent of the design is to be swappable with a similar search for patient request to CDR at a point when that is viable.
 
 
 

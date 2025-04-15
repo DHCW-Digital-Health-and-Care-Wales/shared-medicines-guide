@@ -10,26 +10,26 @@ This details the field mapping between the IHR response and an NHS Wales profile
 
 | FHIR                        | IHR                                                          | notes                                                        |
 | --------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| meta.profile                | "https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Patient" |                                                              |
-| identifier.use              | "official"                                                   |                                                              |
-| identifier.system           | "https://fhir.nhs.uk/Id/nhs-number"                          |                                                              |
+| meta.profile                | ``"https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Patient"`` |                                                              |
+| identifier.use              | ``"official"``                                                 |                                                              |
+| identifier.system           | ``"https://fhir.nhs.uk/Id/nhs-number"``                          |                                                              |
 | identifier.value            | ``NHSnumber.IdValue``                                        |                                                              |
-| identifer:extention.url     | "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus" |                                                              |
-| identifer:extention.system  | "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatusWales" |                                                              |
-| identifer:extention.code    | "01"                                                         |                                                              |
-| identifer:extention.display | "Number present & traced"                                    |                                                              |
-| name[0].use                 | "official"                                                   |                                                              |
+| identifer:extention.url     | ``"https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus"`` |                                                              |
+| identifer:extention.system  | ``"https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatusWales"`` |                                                              |
+| identifer:extention.code    | ``"01"``                                                         |                                                              |
+| identifer:extention.display | ``"Number present & traced"``                                    |                                                              |
+| name[0].use                 | ``"official"``                                                   |                                                              |
 | name[0].family              | ``Demographics.FormalName.StructuredName.FamilyName``        |                                                              |
 | name[0].given[*]            | ``Demographics.FormalName.StructuredName.GivenName``         |                                                              |
 | gender                      | ``Demographics.Gender``                                      | see [note 1](#note-1-gender)                                |
 | birthDate                   | ``Demographics.DateOfBirth``                                 |                                                              |
-| address.use                 | "home"                                                       |                                                              |
-| address.type                | "both"                                                       |                                                              |
+| address.use                 | ``"home"``                                                      |                                                              |
+| address.type                | ``"both"``                                                       |                                                              |
 | address.line[0]             | ``Demographics.Address.StructuredAddress.PropertyNumber``    |                                                              |
 | address.line\[x\]           | ``Demographics.Address.StructuredAddress.StructuredAddress.AddressLine[x]`` |                                                              |
 | address.postalCode          | ``Demographics.Address.PostCode``                            |                                                              |
 | telecom[x].use              | ``Demographics.Telephone.UnstructuredTelecom.TelecomMode``   | see [note 2](#note-2-telecom-use)                           |
-| telecom[x].system           | "http://hl7.org/fhir/contact-point-system"                   |                                                              |
+| telecom[x].system           | ``"http://hl7.org/fhir/contact-point-system"``                   |                                                              |
 | telecom[x].value            | ``Demographics.Telephone.UnstructuredTelecom.TelecomMode``   |                                                              |
 | generaPractitioner          |                                                              | Referenced resource. See [organization](Organization.md) for more information. |
 

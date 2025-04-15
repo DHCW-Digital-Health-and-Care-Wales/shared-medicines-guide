@@ -8,13 +8,13 @@ Quoted values ("") are static values and not read from IHR.
 
 | FHIR          | IHR                                                          | notes                                                        |
 | ------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| meta.profile  | "https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationList" |                                                              |
+| meta.profile  | ``"https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationList"`` |                                                              |
 | title         |                                                              | see [note 1](#note-1-list-title)                            |
-| status        | "current"                                                    |                                                              |
-| mode          | "snapshot"                                                   |                                                              |
-| code.system   | "http://snomed.info/sct"                                     |                                                              |
-| code.code     | "933361000000108"                                            |                                                              |
-| code.display  | "Medications and medical devices"                            |                                                              |
+| status        | ``"current" ``                                                   |                                                              |
+| mode          | ``"snapshot"``                                                   |                                                              |
+| code.system   | ``"http://snomed.info/sct"``                                     |                                                              |
+| code.code     | ``"933361000000108"``                                            |                                                              |
+| code.display  | ``"Medications and medical devices"``                            |                                                              |
 | date          |                                                              | see [note 2](#note-2-list-date)                             |
 | subject       |                                                              | Referenced resource. See [patient](Patient.md) for more information. |
 | source        |                                                              | Referenced resource. See [practitionerRole](PractitionerRole.md) for more information. |

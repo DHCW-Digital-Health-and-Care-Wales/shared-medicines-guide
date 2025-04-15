@@ -8,11 +8,11 @@ This details the field mapping between the IHR response and an NHS Wales profile
 
 | FHIR              | IHR                                                          | notes                                               |
 | ----------------- | ------------------------------------------------------------ | --------------------------------------------------- |
-| meta.profile      | "https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Practitioner" |                                                     |
-| identifier.use    | "official"                                                   |                                                     |
+| meta.profile      | ``"https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Practitioner"`` |                                                     |
+| identifier.use    | ``"official"``                                                 |                                                     |
 | identifier.system |                                                              | see [note 1](#note-1-identifer-systems-and-values) |
 | identifier.value  | ``RegisteredGPcode.IdValue``                                 |                                                     |
-| name[0].use       | "official"                                                   |                                                     |
+| name[0].use       | ``"official"``                                                   |                                                     |
 | name[0].family    | ``RegisteredGP.StructuredName.FamilyName``                   |                                                     |
 | name[0].given[*]  | ``RegisteredGP.StructuredName.GivenName``                    |                                                     |
 
@@ -24,8 +24,8 @@ This details the field mapping between the IHR response and an NHS Wales profile
 
 Sources do not qualify the identifier system so the type of identifier is interpretted from ``RegisteredGPcode.IdValue`` using pattern matching to produce both of these systems. Either provider may outout one of two common forms with well defined patterns. Each can be derived from the other due to one being a checksum based on the other. The identifier values are then generated and both systems below are produced:
 
-* "https://fhir.hl7.org.uk/Id/gmp-number"
-* "https://fhir.hl7.org.uk/Id/din-number"
+* ``"https://fhir.hl7.org.uk/Id/gmp-number"``
+* ``"https://fhir.hl7.org.uk/Id/din-number"``
 
   
 

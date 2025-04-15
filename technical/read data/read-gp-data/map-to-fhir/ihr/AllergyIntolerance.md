@@ -8,11 +8,11 @@ Quoted values ("") are static values and not read from IHR.
 
 | FHIR                             | IHR                                                          | notes              |
 | ----------------------------------- | ------------------------------------------------------------ | ---------- |
-| meta.profile                     | "https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-AllergyIntolerance" |                    |
-| identifier.system                | "https://fhir.nhs.wales/Id/wgpr-source-identifier"           |                    |
+| meta.profile                     | ``"https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-AllergyIntolerance"`` |                    |
+| identifier.system                | ``"https://fhir.nhs.wales/Id/wgpr-source-identifier"``          |                    |
 | identifier.value                 | ``RecordElementProvenance.RecordElementID.IdValue``          |                    |
-| clinicalStatus.coding.system     | "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical" |                    |
-| clinicalStatus.coding.value      | "active"                                                     | always active      |
+| clinicalStatus.coding.system     | ``"http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"`` |                    |
+| clinicalStatus.coding.value      | ``"active"  ``                                                   | always active      |
 | code.coding.system |  | see [note 1](#note-1-coding-system) and [note 2](#note-2-verify-allergy-coding-feature) |
 | code.coding.value | ``ClinicalWarning.ClinicalInformation.ClinicalCode.ClinicalCodeValue`` |  |
 | code.coding.display | ``ClinicalWarning.ClinicalInformation.ClinicalCode.ClinicalCodeSelectedTerm`` |  |
@@ -30,9 +30,9 @@ Quoted values ("") are static values and not read from IHR.
 
 System determined by ``ClinicalWarning.ClinicalInformation.ClinicalCode.ClinicalCodeScheme.ClinicalCodeSchemeId``.
 
-* When SCT or SNOMED then "http://snomed.info/sct"
-* When READ and ``ihr:ClinicalWarning.ClinicalInformation.ClinicalCode.ClinicalCodeScheme.ClinicalCodeSchemeVersion `` is 2 then "http://read.info/v2"
-* When READ and ``ihr:ClinicalWarning.ClinicalInformation.ClinicalCode.ClinicalCodeScheme.ClinicalCodeSchemeVersion `` is 3 then "http://read.info/ctv3"
+* When SCT or SNOMED then ``"http://snomed.info/sct"``
+* When READ and ``ihr:ClinicalWarning.ClinicalInformation.ClinicalCode.ClinicalCodeScheme.ClinicalCodeSchemeVersion `` is 2 then ``"http://read.info/v2"``
+* When READ and ``ihr:ClinicalWarning.ClinicalInformation.ClinicalCode.ClinicalCodeScheme.ClinicalCodeSchemeVersion `` is 3 then ``"http://read.info/ctv3"``
 
 
 
@@ -42,9 +42,9 @@ If the `tryMapReadCodingToSnomed` feature is enabled then each allergy coding re
 
 | FHIR                | IHR                              | notes |
 | ------------------- | -------------------------------- | ----- |
-| code.coding.system  | "http://snomed.info/sct"         |       |
-| code.coding.value   | "196411000000103"                |       |
-| code.coding.display | "Transfer-degraded record entry" |       |
+| code.coding.system  | ``"http://snomed.info/sct"``         |       |
+| code.coding.value   | ``"196411000000103"``                |       |
+| code.coding.display | ``"Transfer-degraded record entry"`` |       |
 
 
 
@@ -55,9 +55,9 @@ Recorder is a referenced resource. The IHR Source doesn't produce sufficient det
 | FHIR               | IHR                                                          | notes                                                        |
 | ------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | id                 | ``RecordElementProvenance.RecordElementID.IdValue``          |                                                              |
-| meta.profile       | "https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-PractitionerRole" |                                                              |
-| code.coding.system | "http://snomed.info/sct"                                     |                                                              |
-| code.coding.code   |                                                              | see [note 3A](#note-3a%3A-recorder-roles)                      |
+| meta.profile       | ``"https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-PractitionerRole"`` |                                                              |
+| code.coding.system | ``"http://snomed.info/sct" ``                                    |                                                              |
+| code.coding.code   |                                                              | see [note 3A](#note-3a-recorder-roles)                      |
 | organization       |                                                              | Logically referenced resource. See [organization]() for more information. |
 
 ##### Note 3A: recorder roles

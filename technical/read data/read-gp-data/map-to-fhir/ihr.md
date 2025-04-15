@@ -14,7 +14,7 @@ or an AllergyIntolerance search:
 
 ``/AllergyIntolerance?patient.identifier={identifier}&_include={include}``
 
-> AllergyIntollerance requests using the above format will result in an internal list based request with an allergy code to make the retrieval criterion selection more consistant.
+
 
 the ``_include`` parameter will determine which additional resources should be included in the response.
 

@@ -1,6 +1,6 @@
 # WRDS
 
-Internally the service makes a 'search for organization endpoint' FHIR search request and expects a FHIR search response. It maps a [FHIR Request](FHIR Request) to a [WRDS GPPractice Lookup Request](WRDS GPPractice Lookup Request). The [WRDS Response](WRDS Response) is mapped to a [FHIR Response](FHIR Response) as described here. 
+Internally the service makes a 'search for organization endpoint' FHIR search request and expects a FHIR search response. It maps a [FHIR Request](#fhir-request) to a [WRDS GPPractice Lookup Request](#wrds-gppractice-lookup-request). The [WRDS Response](#wrds-response) is mapped to a [FHIR Response](#fhir-response) as described here. 
 
 Ultimately this process is a service locator pattern.  We are trying to determine which GP service provider holds the patients records. This is achieved by discovering which provider is active at a specific GP practice. We are emulating an Endpoint search and allocating details using environment specific config. We use the config to construct two endpoints. We select the endpoint using the WRDS response.
 
