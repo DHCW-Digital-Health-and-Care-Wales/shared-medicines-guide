@@ -1,0 +1,379 @@
+<html>
+
+<head>
+    <style>
+        html,
+        body {
+            font-family: "Frutiger W01",
+                Arial,
+                sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            color: rgb(33, 43, 50);
+            text-align: start;
+            word-spacing: 0px;
+            box-sizing: border-box;
+            padding: 2rem
+        }
+
+        caption {
+            font-weight: 600;
+            font-size: 1.375rem;
+            line-height: 1.45455;
+            text-align: left;
+        }
+
+        thead tr th,
+        tbody tr td {
+            line-height: 1.47368;
+            padding-bottom: 16px;
+            padding-right: 24px;
+            padding-top: 16px;
+            border-bottom: 2px solid rgb(216, 221, 224);
+            text-align: left;
+            vertical-align: top;
+
+            font-size: 1.1875rem;
+        }
+
+        thead tr th {
+            font-weight: 600;
+        }
+
+        tbody tr td {
+            border-bottom: 1px solid rgb(216, 221, 224);
+            justify-content: space-between;
+        }
+
+        thead tr th:last-child,
+        tbody tr td:last-child {
+            padding-right: 0px;
+        }
+
+        tbody tr {
+            margin-bottom: 24px;
+        }
+        tbody td small{display: block;}
+        a:link,
+        a:visited,
+        a:active,
+        a:hover {
+            color: #005EB8
+        }
+
+        details {
+            padding-left: 1em
+        }
+
+        summary {
+            margin-left: -1em;
+            cursor: pointer;
+        }
+
+        summary::marker {
+            color: #005EB8
+        }
+
+        .fw-10 {
+            min-width: 10em;
+        }
+        .fw-15 {
+            min-width: 15em;
+        }
+        /*
+        summary::after {
+            content: ' more information';
+            color: #005EB8
+        }
+
+        details[open] summary::after {
+            content: ' less information';
+        }
+            */
+        .callout {
+            background-color: FFF9C4;
+            border: 1px solid #FFEB3B;
+            padding: 0 1.5rem 1.5rem 1.5rem
+        }
+
+        .callout h2 {
+
+            font-size: 1.5rem;
+            line-height: 1.33333;
+            display: inline-block;
+            font-weight: 600;
+            margin: 0px 0px 8px -33px;
+            background-color: rgb(255, 235, 59);
+            color: rgb(33, 43, 50);
+            padding: 8px 32px;
+            position: relative;
+            top: -16px;
+        }
+
+        .callout p {
+            margin-top: 0px;
+            margin-bottom: 24px;
+
+        }
+
+        .callout summary {
+            color: #005EB8
+        }
+        h1{margin: 0 0 1em 0;padding:0 0 0.5em 0;border-bottom: 1px solid rgb(216, 221, 224);}
+        .small{font-weight: 200;font-size: 1rem;color:#212B32}
+        .largest{font-size:1.6rem}
+    </style>
+</head>
+
+<body>
+    <h1>Medicines record- combined view </h1>
+   
+   <!--<p class="largest">A combined view of medicines from many sources.<br></p>-->
+    <div class="callout">
+        <h2>Important</h2>
+        <p>This is a combined list of medicines taken from many sources. It may not be a complete record. It may contain duplicates. </p><p>Talk to the patient where you can. Compare with other sources.</p>
+        <details>
+            <summary>Medication sources included in this record</summary>
+            <ul>
+                <li>Inpatient discharge: Cardiff & Vale since April 2025</li>
+                <li>Inpatient discharge & transfers: Swansea Bay since October 2025</li>
+                <li> GP Records since June 2023</li>
+            </ul>
+        </details>
+    </div>
+    <p>The record was last updated 3 days ago. <br/><small>This view was refreshed a few moments ago.</small></p>
+    <table role="table">
+        <caption></caption>
+        <thead role="rowgroup">
+            <tr role="row">
+                <th scope="col" role="columnheader">medication</th>
+                <th scope="col" role="columnheader" class="fw-10">dispense</th>
+                <th scope="col" role="columnheader" class="fw-15">period</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- acute sample-->
+            <tr role="row">
+                <td role="cell">
+                    <details>
+                        <summary>Trandolapril 2mg capsules - Active - One To Be Taken Each Day</summary>
+                        <ul>
+                            <li>One To Be Taken Each Day</li>
+                            <li> 80 capsules supplied</li>
+
+                            <li>Last issued on Oct 6th 2022</li>
+                            <li>Sourced from GP Records</li>
+                            <li><a href="#">Find out more about this medication</a>
+                            </li>
+                        </ul>
+                    </details>
+                </td>
+                <td role="cell">once</td>
+                <td role="cell" >
+                    <small>
+                        <b>Recorded: </b>
+                        <span>Friday 4th April 2025</span>
+                    </small>
+                    <small>
+                        <b>Start: </b>
+                        <span>Friday 4th April 2025</span>
+                    </small>
+                    <small><b>End: </b>
+                        <span></span><span class="light">not
+                            dated</span>
+                    </small>
+                    <small>
+                        <b>Last Issue: </b>
+                        <span>Friday 4th April 2025</span>
+                    </small>
+
+                </td>
+            </tr>
+            <!-- repeat unknown status sample-->
+            <tr role="row">
+                <td role="cell">
+                    <details>
+                        <summary>Paracetamol 500mg capsules - Unknown</summary>
+                        <ul>
+                            <li>See Additional Instructions Below <br />REPEAT - NOT ISSUED PRESCRIBED UNDER 2 YEARS AGO
+                                BY HOSPITAL</li>
+                            <li> 28 capsules supplied</li>
+
+                            <li>Last issued on Oct 6th 2022</li>
+                            <li>Sourced from GP Records</li>
+                            <li><a href="#">Find out more about this medication</a>
+                            </li>
+                        </ul>
+                    </details>
+                </td>
+                <td role="cell">on repeat (0 of 2)</td>
+                <td role="cell" >
+                    <small>
+                        <b>Recorded: </b>
+                        <span>Friday 4th April 2025</span>
+                    </small>
+                    <small>
+                        <b>Start: </b>
+                        <span>Friday 4th April 2025</span>
+                    </small>
+                    <small><b>End: </b>
+                        <span></span><span class="light">not
+                            dated</span>
+                    </small>
+                    <small>
+                        <b>Last Issue: </b>
+                        <span> - </span>
+                    </small>
+
+                </td>
+            </tr>
+            <!-- acute AMP complete sample-->
+            <tr role="row">
+                <td role="cell">
+                    <details>
+                        <summary>Toviaz 4mg modified-release tablets (Pfizer Ltd) - Completed</summary>
+                        <ul>
+                            <li>TAKE 1 TABLET ONCE DAILY</li>
+                            <li>28 tablets supplied</li>
+
+                            <li>Last issued on Oct 6th 2022</li>
+                            <li>Sourced from GP Records</li>
+                            <li><a href="#">Find out more about this medication</a>
+                            </li>
+                        </ul>
+                    </details>
+                </td>
+                <td role="cell">once</td>
+                <td role="cell" >
+                    <small>
+                        <b>Recorded: </b>
+                        <span>Friday 4th April 2025</span>
+                    </small>
+                    <small>
+                        <b>Start: </b>
+                        <span>Friday 4th April 2025</span>
+                    </small>
+                    <small><b>End: </b>
+                        <span></span><span class="light">not
+                            dated</span>
+                    </small>
+                    <small>
+                        <b>Last Issue: </b>
+                        <span>Friday 4th April 2025</span>
+                    </small>
+
+                </td>
+            </tr>
+            <!-- repeat sample-->
+            <tr role="row">
+                <td role="cell">
+                    <details>
+                        <summary>Simvastatin 20mg/5ml oral suspension sugar free - Active - TWICE A DAY</summary>
+
+                        <ul>
+                            <li>TWICE A DAY</li>
+                            <li>150 ml supplied</li>
+                            <li>Last issued on Oct 6th 2022</li>
+                            <li>Sourced from GP Records</li>
+                            <li><a href="#">Find out more about this medication</a>
+                            </li>
+                        </ul>
+                    </details>
+                </td>
+                <td role="cell">on repeat (2 of 6)</td>
+                <td role="cell" >
+                    <small>
+                        <b>Recorded: </b>
+                        <span>Friday 4th April 2025</span>
+                    </small>
+                    <small>
+                        <b>Start: </b>
+                        <span>Friday 4th April 2025</span>
+                    </small>
+                    <small><b>End: </b>
+                        <span></span><span class="light">not
+                            dated</span>
+                    </small>
+                    <small>
+                        <b>Last Issue: </b>
+                        <span>Friday 4th April 2025</span>
+                    </small>
+
+                </td>
+            </tr>
+            <!-- hospital sample -->
+            <tr role="row">
+                <td role="cell">
+                    <details>
+                        <summary>Glucose 5% infusion 250ml bags, Elaprase 6mg/3ml concentrate for solution for infusion
+                            vials (Takeda UK Ltd) - Active - Dose 12 mg / 506 ml - Intravenous - Noon</summary>
+
+                        <ul>
+                            <li>Dose 12 mg / 506 ml - Intravenous - Noon</li>
+                            <li>Sourced from Hospital Records</li>
+                            <li><a href="#">Find out more about this medication</a>
+                            </li>
+                        </ul>
+                    </details>
+                </td>
+                <td role="cell">once</td>
+                <td role="cell" >
+                    <small>
+                        <b>Recorded: </b>
+                        <span>Friday 4th April 2025</span>
+                    </small>
+                    <small>
+                        <b>Start: </b>
+                        <span>Friday 4th April 2025</span>
+                    </small>
+                    <small><b>End: </b>
+                        <span></span><span class="light">not
+                            dated</span>
+                    </small>
+                    <small>
+                        <b>Last Issue: </b>
+                        <span>Friday 4th April 2025</span>
+                    </small>
+
+                </td>
+            </tr>
+            <!-- stopped sample -->
+            <tr role="row">
+                <td role="cell">
+                    <details>
+                        <summary>Prednisolone 10mg tablets - Stopped</summary>
+
+                        <ul>
+                            <li>Dose 20 mg - Oral - 2x per day (10:00, 18:00)</li>
+                            <li>Sourced from Hospital Records</li>
+                            <li><a href="#">Find out more about this medication</a>
+                            </li>
+                        </ul>
+                    </details>
+                </td>
+                <td role="cell">once</td>
+                <td role="cell" >
+                    <small>
+                        <b>Recorded: </b>
+                        <span>Friday 4th April 2025</span>
+                    </small>
+                    <small>
+                        <b>Start: </b>
+                        <span>Friday 4th April 2025</span>
+                    </small>
+                    <small><b>End: </b>
+                        <span></span><span class="light">not
+                            dated</span>
+                    </small>
+                    <small>
+                        <b>Last Issue: </b>
+                        <span>Friday 4th April 2025</span>
+                    </small>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
