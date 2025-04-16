@@ -5,7 +5,7 @@
 A user can view a medicines history record for a clear overview of current and previous medines activity
 
 ### [Update medicines history record for a patient](update-medicines-history/index.md)
-A user can add a known risk so that others can understand it
+A user can add a new entry to the medicines history for a patient
 
 
 
