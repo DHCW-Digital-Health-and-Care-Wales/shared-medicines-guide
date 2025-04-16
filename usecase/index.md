@@ -11,7 +11,7 @@ A user can add a known risk so that others can understand it
 
 
 ## Understanding Wireframes
-Our wireframes are not prescriptive. Wireframes are intended to provide design guidance, where needed, to help users complete tasks. Quality measures, if you need to assess wireframes, should consider information archiecture and user experience.  Colours and the layout are indicative of visual priority. Wireframes are useful starting points for desginers and user centred desgin activities. They do not examples of production-ready outputs.
+Our wireframes are not prescriptive. Wireframes are intended to provide design guidance, where needed, to help users complete tasks. Quality measures, if you need to assess wireframes, should consider information architecture and user experience.  Colours and the layout are indicative of visual priority. Wireframes are useful starting points for designers and user centred design activities. They are not examples of production-ready outputs.
 
 ## Background: all use cases
 
