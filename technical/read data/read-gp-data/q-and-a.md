@@ -332,6 +332,7 @@ This is normally temporary following a cancel (see previous) or if the prescript
 
 * if they modify the acute medication and simply switch the type to repeat then there will be one item returned (repeat, and potentially active)
 * if they consider the acute as complete and decide to add an new prescription to cover the repeat then there will be two items returned- one acute (complete) and on repeat (potentially active)
+* in the interim period when the acute is still in progress there would be two active items- one for the acute and one for the repeat- assuming the repeat is issued in this case
 
 ## Q: Is dosage.additionalInstruction populated from the pharmacy Instructions in the clinical system? Or from the patient instructions?
 
