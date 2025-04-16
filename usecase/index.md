@@ -13,7 +13,7 @@ A user can add a new entry to the medicines history for a patient
 ## Understanding Wireframes
 Our wireframes are not prescriptive. Wireframes are intended to provide design guidance, where needed, to help users complete tasks. Quality measures, if you need to assess wireframes, should consider information architecture and user experience.  Colours and the layout are indicative of visual priority. Wireframes are useful starting points for designers and user centred design activities. They are not examples of production-ready outputs.
 
-## Background: all use cases
+## Use case background
 
 The following are common to all use cases and examples
 
@@ -25,14 +25,14 @@ The following are common to all use cases and examples
 
   
 
-### Comon definitions & abbreviations
+### Common definitions & abbreviations
 
-* the system: a digital tool with medicines management functionality
+* **the system**: a digital tool with medicines management functionality
   
-* the user: a person with accces to the system
+* **the user**: a person with accces to the system
   
-* HCW: Health Care worker
+* **HCW**: Health Care worker
 
-* FHIR: Fast Healthcare Interoperability Resource. A healthcare data exchange framework from HL7 international for the modern web
+* **FHIR**: Fast Healthcare Interoperability Resource. A healthcare data exchange framework from HL7 international for the modern web
 
   
