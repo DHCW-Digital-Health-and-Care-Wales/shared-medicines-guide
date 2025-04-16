@@ -83,13 +83,13 @@ The encounter represents a meeting of persons, involved for a specific reason, a
 
 There may be situations where there is no encounter, especially if the patient or a related person is making the record.
 
-A Practitioner represents a health care worker. The health care worker may be assigned a specific role, for example general practitoner, specialist nurse, or consultant. They may be a licenced prescriber and dispenser of medicines.
+A Practitioner represents a health care worker. The health care worker may be assigned a specific role, for example general practitioner, specialist nurse, or consultant. They may be a licenced prescriber and dispenser of medicines.
 
 A practitioner will make a record about the patients interaction with a medicine. They may need to prescribe. Following on from here, a dispensation of medicines occurs. The healthcare worker or patient may need to record when they take the medicine or if they dont take it at all. 
 
 This process may produce one or more medicationStatements, medicationRequests,  medicationDispenses and medicationAdministrations. Each of these will refer to the medication formulation, and also one another, through this chain of actions.
 
-The practitioner may need to let others know about this activity, epecially if changes have occured. They may wish to capture a list of what they consider relevant at that point in time. A software system may also do this for them, but in either case a List may carry an overview of this information forward and allow the next user to rech into more connected details as they need to.
+The practitioner may need to let others know about this activity, epecially if changes have occured. They may wish to capture a list of what they consider relevant at that point in time. A software system may also do this for them, but in either case a List may carry an overview of this information forward and allow the next user to reach into the connected details as they need to.
 
 In this way, the record can be read at various points and specific resource types can be surfaced where most relevant for a given use case.
 
