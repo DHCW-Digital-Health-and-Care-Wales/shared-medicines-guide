@@ -8,11 +8,6 @@ A user can view a medicines history record for a clear overview of current and p
 A user can add a new entry to the medicines history for a patient
 
 
-
-
-## Understanding Wireframes
-Our wireframes are not prescriptive. Wireframes are intended to provide design guidance, where needed, to help users complete tasks. Quality measures, if you need to assess wireframes, should consider information architecture and user experience.  Colours and the layout are indicative of visual priority. Wireframes are useful starting points for designers and user centred design activities. They are not examples of production-ready outputs.
-
 ## Use case background
 
 The following are common to all use cases and examples
@@ -36,3 +31,6 @@ The following are common to all use cases and examples
 * **FHIR**: Fast Healthcare Interoperability Resource. A healthcare data exchange framework from HL7 international for the modern web
 
   
+
+## Understanding Wireframes
+Our wireframes are not prescriptive. Wireframes are intended to provide design guidance, where needed, to help users complete tasks. Quality measures, if you need to assess wireframes, should consider information architecture and user experience.  Colours and the layout are indicative of visual priority. Wireframes are useful starting points for designers and user centred design activities. They are not examples of production-ready outputs.
