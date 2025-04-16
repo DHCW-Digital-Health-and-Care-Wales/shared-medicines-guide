@@ -4,7 +4,7 @@
 
 ## Wireframes
 
-Wireframes are not prescriptive. See notes on [how to use wireframes](https://github.com/acommonjones/allergy-guide/blob/main/usecase/index.md#understanding-wireframes)
+Wireframes are not prescriptive. See notes on [how to use wireframes](../index.md#understanding-wireframes)
 
 **Walk-through samples**
 
