@@ -1,7 +1,7 @@
 
 # Use cases
 
-### [View medicines history record for a patient](view-record/index.md)
+### [View medicines history record for a patient](view-medicines-history/index.md)
 A user can view a medicines history record for a clear overview of current and previous medines activity
 
 ### [Update medicines history record for a patient](update-medicines-history/index.md)
